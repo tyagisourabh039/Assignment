@@ -40,14 +40,20 @@ const lineChartsParams = {
 const pieChartsParams = {
   series: [
     {
-      data: [{ value: 5 }, { value: 10 }, { value: 15 }],
+      data: series1.map(value=>({value:value})),
       label: "Series 1",
       outerRadius: 80,
       highlighted: { additionalRadius: 10 },
     },
     {
-      data: [{ value: 5 }, { value: 10 }, { value: 15 }],
-      label: "Series 1",
+      data:series2.map(value=>({value:value})),
+      label: "Series 2",
+      innerRadius: 90,
+      highlighted: { additionalRadius: 10 },
+    },
+    {
+      data:series3.map(value=>({value:value})),
+      label: "Series 3",
       innerRadius: 90,
       highlighted: { additionalRadius: 10 },
     },
@@ -165,6 +171,17 @@ export default function MultiBarChart() {
                 faded,
               },
             }))}
+            xAxis={[{ data: xLabels, scaleType: "band" }]}
+            yAxis={[
+              { id: "leftAxisId" },
+              { id: "middleAxisId" },
+              { id: "rightAxisId" },
+            ]}
+            colors={[
+              "rgb(159, 220, 255)",
+              "rgb(56, 182, 255)",
+              "rgb(68, 72, 154)",
+            ]}
           />
         )}
 
@@ -178,6 +195,17 @@ export default function MultiBarChart() {
                 faded,
               },
             }))}
+            xAxis={[{ data: xLabels, scaleType: "band" }]}
+            yAxis={[
+              { id: "leftAxisId" },
+              { id: "middleAxisId" },
+              { id: "rightAxisId" },
+            ]}
+            colors={[
+              "rgb(159, 220, 255)",
+              "rgb(56, 182, 255)",
+              "rgb(68, 72, 154)",
+            ]}
           />
         )}
       </Box>

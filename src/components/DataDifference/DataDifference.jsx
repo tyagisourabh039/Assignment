@@ -17,19 +17,6 @@ export const FlexBox = styled("div")(() => ({
   alignItems: "center",
   // backgroundColor: 'transparent'
 }));
-const CircularBar = styled("div")(() => ({
-  border: "2px solid gray",
-  borderRadius: "50%",
-  width: "50px",
-  height: "50px",
-  display: "flex",
-  borderTop: "2.5px solid rgb(56, 182, 255);",
-  borderRight: "2.5px solid rgb(56, 182, 255);",
-  borderBottom: "2.5px solid rgb(56, 182, 255);",
-  alignItems: "center",
-  justifyContent: "center",
-  rotate: "50deg",
-}));
 const FacebookCircularProgress = ({ size, value, AvatarIcon }) => {
   return (
     <Box>
@@ -88,7 +75,7 @@ const FacebookCircularProgress = ({ size, value, AvatarIcon }) => {
 };
 function DataDifference() {
   return (
-    <Box sx={{ paddingLeft: "20px", paddingRight: "20px" }}>
+    <Box sx={{ minWidth:'30rem',paddingLeft: "20px", paddingRight: "20px" }}>
       <FlexBox>
         <Typography
           variant="h2"

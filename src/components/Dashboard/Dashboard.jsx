@@ -18,7 +18,7 @@ function Dashboard() {
     <Container maxWidth="">
       <h1>Dashboard</h1>
       <Grid container spacing={4}>
-        <Grid item xs={5} sx={{ border: "none", boxShadow: "none" }}>
+        <Grid item  sx={{ minWidth:'34rem',width:'36%', border: "none", boxShadow: "none" }}>
           <Item sx={{ boxShadow: "none", borderRadius: "15px" }}>
             <DataDifference />
           </Item>
@@ -28,7 +28,7 @@ function Dashboard() {
             <MultiBarChart />
           </Item>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item  sx={{minWidth:'34rem',width:'36%'}}>
           <Item
             sx={{
               padding: "0",
@@ -45,11 +45,11 @@ function Dashboard() {
             <BasicCard name={"ABC"} value={125} />
             <BasicCard name={"ABC"} value={300} />
           </Item>
-          <Item sx={{ height: "58%", boxShadow: "none", borderRadius: "15px" }}>
+          <Item sx={{alignSelf:'flex-end', maxWidth:'30rem', height: "58%", boxShadow: "none", borderRadius: "15px" }}>
             <Map />
           </Item>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item sx={{width:'20%'}}>
           <Item
             sx={{
               backgroundColor: "transparent",

@@ -18,7 +18,9 @@ function SearchBar() {
         alignItems: "center",
         background: "white",
         borderRadius: "30px",
-        width: "300px",
+        minWidth: "20rem",
+        maxWidth: "20rem",
+        border: "2px solid transparent",
         "&:focus-within": {
           border: "2px solid #1976d2",
         },

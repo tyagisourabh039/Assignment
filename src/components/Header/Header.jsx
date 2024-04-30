@@ -23,7 +23,7 @@ function Header() {
     <>
       <FlexBox>
         <CompanyBrand>Sourabh</CompanyBrand>
-        <FlexBox sx={{ width: "40%" }}>
+        <FlexBox sx={{ minWidth: "40vw", gap:2 }}>
           <SearchBar />
           <CommentIcon sx={{ scale: "1.5" }}></CommentIcon>
           <NotificationsIcon sx={{ scale: "1.5" }}></NotificationsIcon>
@@ -33,9 +33,10 @@ function Header() {
                 flexDirection: "column",
                 flexWrap: "nowrap",
                 justifyContent: "center",
+                alignItems:'flex-end'
               }}
             >
-              <Profile>Claudia Alves</Profile>
+              <Profile sx={{fontWeight:'600', fontSize:'20px',alignSelf:'flex-end'}}>Claudia Alves</Profile>
               <Profile>Administrator</Profile>
             </FlexBox>
             <Avatar />
