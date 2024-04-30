@@ -18,7 +18,7 @@ export default function BasicCard({ name, value }) {
         display: "flex",
         alignItems: "center",
         boxShadow: "none",
-        width: "220px",
+        width: "15rem",
         height: "120px",
         marginBottom: "20px",
         borderRadius: "15px",

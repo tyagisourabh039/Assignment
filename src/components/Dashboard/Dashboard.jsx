@@ -45,7 +45,7 @@ function Dashboard() {
             <BasicCard name={"ABC"} value={125} />
             <BasicCard name={"ABC"} value={300} />
           </Item>
-          <Item sx={{alignSelf:'flex-end', maxWidth:'30rem', height: "58%", boxShadow: "none", borderRadius: "15px" }}>
+          <Item sx={{alignSelf:'flex-end', maxWidth:'34rem', height: "58%", boxShadow: "none", borderRadius: "15px" }}>
             <Map />
           </Item>
         </Grid>
